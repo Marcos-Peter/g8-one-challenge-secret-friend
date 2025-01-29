@@ -20,15 +20,15 @@
         <section class='input-section'>
             <h2 class='section-title'>Enter the name of your friends</h2>
             <div class='input-wrapper'>
-                <input type='text' id='friend' class='input-name' placeholder='Enter a name'>
-                <button class='button-add'>Add a friend</button>
+                <input type='text' id='friendName' onclick="clearInputOnClick()" class='input-name' placeholder='Enter a name'>
+                <button class='button-add' onclick="addANewFriend()">Add a friend</button>
             </div>
            
             <ul id='friendsList' class='name-list' aria-labelledby='friendsList' role='list'></ul>
-            <ul id='result' class='result-list' aria-live='polite'></ul>
+            <p id='result' class='draw-result' aria-live='polite'></p>
 
             <div class='button-container'>
-                <button class='button-draw' aria-label='Draw secret friend'>
+                <button id='draw-button' class='draw-button' onclick="drawAFriend()" aria-label='Draw secret friend'>
                     <img src='assets/play_circle_outline.png' alt='Icon for draw'>
                     Draw a Friend
                 </button>
