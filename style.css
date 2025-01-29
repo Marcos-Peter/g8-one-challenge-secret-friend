@@ -1,7 +1,7 @@
 :root {
     --color-primary: #4B69FD;
     --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
+    --color-tertiary: #86bcc0;
     --color-button: #fe652b;
     --color-button-hover: #e55720;
     --color-text: #444444;
@@ -106,13 +106,13 @@ button {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     border-radius: 25px;
-    cursor: pointer;
 }
 
 .button-add {
     background-color: var(--color-tertiary);
     color: var(--color-text);
     border-radius: 0 25px 25px 0;
+    cursor: pointer;
 }
 
 .button-add:hover {
@@ -121,36 +121,38 @@ button {
 
 /* Lists */
 ul {
-    list-style-type: none;
+    list-style: none;
     color: var(--color-text);
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     margin: 20px 0;
+    min-height: 300px;
+    column-gap: 8px;
+    align-items: center;
 }
 
-.result-list {
-    margin-top: 15px;
+li {
+    break-inside: avoid;
+}
+
+.draw-result {
+    font-family: 'Inter', sans-serif;
     color: #05DF05;
+    padding: 16px;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
 }
 
 /* Draw button title */
-.button-draw {
+.draw-button {
     display: flex;
     align-items: center;
     width: 100%;
     padding: 10px 32px;
-    color: var(--color-white);
-    background-color: var(--color-button);
     font-size: 24px;
 }
 
-.button-draw img {
+.draw-button img {
     margin-right: 40px;
-}
-
-.button-draw:hover {
-    background-color: var(--color-button-hover);
 }
