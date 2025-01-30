@@ -126,7 +126,7 @@ ul {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     margin: 20px 0;
-    min-height: 300px;
+    min-height: 250px;
     column-gap: 8px;
     align-items: center;
 }
@@ -135,17 +135,55 @@ li {
     break-inside: avoid;
 }
 
-.draw-result {
+#warning {
+    display: none;
     font-family: 'Inter', sans-serif;
-    color: #05DF05;
+    align-items: center;
+    text-align: center;
+    background-color:#f5a78b;
+    color: #9b2a2a;
+    padding: 16px;
+    font-size: 22px;
+    font-weight: bold;
+    width: 650px;
+    min-height: 96px;
+    border-radius: 8px;
+}
+
+.friend-item {
+    margin-bottom: 8px;
+    background-color: #C4C4C4;
+    font-weight: 600;
+    border-radius: 8px;
+    text-align: center;
+    padding: 4px;
+    min-width: 300px;
+    min-height: 30px;
+}
+
+.two-columns {
+    column-count: 2;
+}
+
+.draw-result {
+    display: none;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
     padding: 16px;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
+    align-items: center;
+    background-color:#60b160;
+    color: #fff;
+    min-width: 350px;
+    min-height: 96px;
+    border-radius: 8px;
 }
 
 /* Draw button title */
 .draw-button {
+    margin-top: 8px;
     display: flex;
     align-items: center;
     width: 100%;
